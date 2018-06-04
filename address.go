@@ -22,31 +22,34 @@ type ZipCode struct {
 
 type AddressValidateResponse struct {
 	Address struct {
-		Address1 string `xml:"Address1"`
-		Address2 string `xml:"Address2"`
-		City     string `xml:"City"`
-		State    string `xml:"State"`
-		Zip5     string `xml:"Zip5"`
-		Zip4     string `xml:"Zip4"`
+		Address1   string `xml:"Address1"`
+		Address2   string `xml:"Address2"`
+		City       string `xml:"City"`
+		State      string `xml:"State"`
+		Zip5       string `xml:"Zip5"`
+		Zip4       string `xml:"Zip4"`
+		ReturnText string `xml:"ReturnText"`
 	} `xml:"Address"`
 }
 
 type ZipCodeLookupResponse struct {
 	Address struct {
-		Address1 string `xml:"Address1"`
-		Address2 string `xml:"Address2"`
-		City     string `xml:"City"`
-		State    string `xml:"State"`
-		Zip5     string `xml:"Zip5"`
-		Zip4     string `xml:"Zip4"`
+		Address1   string `xml:"Address1"`
+		Address2   string `xml:"Address2"`
+		City       string `xml:"City"`
+		State      string `xml:"State"`
+		Zip5       string `xml:"Zip5"`
+		Zip4       string `xml:"Zip4"`
+		ReturnText string `xml:"ReturnText"`
 	} `xml:"Address"`
 }
 
 type CityStateLookupResponse struct {
 	ZipC struct {
-		Zip5  string `xml:"Zip5"`
-		City  string `xml:"City"`
-		State string `xml:"State"`
+		Zip5       string `xml:"Zip5"`
+		City       string `xml:"City"`
+		State      string `xml:"State"`
+		ReturnText string `xml:"ReturnText"`
 	} `xml:"ZipCode"`
 }
 
